@@ -31,7 +31,7 @@ class Result {
                 max++; //Increment max count
                 maxNum = scores.get(i); //Change new max
             }
-            
+                
             if (scores.get(i) < minNum) { //If next element less than min num then
                 min++; //Increment min count
                 minNum = scores.get(i); //Change new min
