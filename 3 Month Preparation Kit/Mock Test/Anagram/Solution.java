@@ -45,6 +45,8 @@ class Result {
         return -1;
     }
 
+
+}
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -61,4 +63,11 @@ public class Solution {
                 bufferedWriter.write(String.valueOf(result));
                 bufferedWriter.newLine();
             } catch (IOException ex) {
-                
+                throw new RuntimeException(ex);
+            }
+        });
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
+}
